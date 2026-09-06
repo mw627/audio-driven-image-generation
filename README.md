@@ -12,52 +12,6 @@ Audio Input → Audio Understanding → Scene Summarization → Visual Prompt Ge
 
 The system integrates Qwen3-Omni, an LLM-based two-stage Prompt Adapter, and Stable Diffusion v1.5 into a unified Gradio web application.
 
-⸻
-
-Pipeline
-
-┌──────────────────┐
-│   Audio Input    │
-│ Local File / URL │
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Audio Validation │
-│ & Preprocessing  │
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────────────┐
-│ Qwen3-Omni Audio         │
-│ Captioning               │
-│                          │
-│ Audio → Audio Description│
-└────────┬─────────────────┘
-         │
-         ▼
-┌──────────────────────────┐
-│ Two-Stage Prompt Adapter │
-│                          │
-│ Stage 1: Semantic        │
-│ Compression              │
-│                          │
-│ Stage 2: Visual Mapping  │
-└────────┬─────────────────┘
-         │
-         ▼
-┌──────────────────────────┐
-│ Stable Diffusion v1.5    │
-│                          │
-│ Text Prompt → Image      │
-└────────┬─────────────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Generated Image  │
-└──────────────────┘
-
-⸻
 
 Key Features
 
